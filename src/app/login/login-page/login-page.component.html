@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <div class="center_section">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="assets/images/trevaImg.svg" width="100%" height="300">
+            </div>
+        </div>
+        <div class="row login_section">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3 class="contact">Contact us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div>
+                    <div>
+                        <label class="text_color">Name</label>
+                        <div>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Name</mat-label>
+                                <input matInput type="text" placeholder="Enter User Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="text_color">Email</label>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput type="text" placeholder="Enter Email ID">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text_color">Phone Number</label>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Phone Number</mat-label>
+                                    <input matInput type="number" placeholder="Enter Phone numer" minlength="0" maxlength="10">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text_color">Choose a topic</label>
+                        <div>
+                            <mat-form-field appearance="outline">
+                                <mat-select placeholder="select one --">
+                                    <mat-option *ngFor="let selecttopic of selecttopiclist" [value]="selecttopic.value">
+                                      {{selecttopic.viewValue}}
+                                    </mat-option>
+                                  </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text_color">Message</label>
+                        <div class="message_word_break">
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+    <div class=" bg-img">
+        <div class="col">
+            <div class="image">
+                <img src="">
+            </div>
+        </div>
+    </div>
+</div> -->
